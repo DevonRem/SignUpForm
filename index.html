@@ -24,7 +24,7 @@
 
         <h3 class="text2">You <em>know</em> you want to.</h3>
 
-        <form action="example.com/path" method="post">
+        <form onSubmit = "return comparepass(this)" action="example.com/path" method="post">
             <div class="card">
                 <h3>Let's do this!</h3>
                 <div class="inputwrapper">
@@ -41,16 +41,18 @@
                 </div>
                 <div class="inputwrapper">
                     <label for="phone_number">Phone Number</label>
-                    <input type="tel" id="phone_number" name="phone_number" placeholder="xxx-xxx-xxxx" required>
+                    <input type="tel" id="phone_number" name="phone_number" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" placeholder="xxx-xxx-xxxx" required>
                 </div>
                 <div class="inputwrapper">
                     <label for="user_password" class="passwd">Password</label>
                     <input type="password" id="user_password" name="password" required>
-                </div>    
+                </div>
+  
                 <div class="inputwrapper">
                     <label for="confirm_password" class="passwd">Confirm Password</label>
                     <input type="password" id="confirm_password" name="confirm_password" required>
                 </div>
+                <div class="errormessage"></div>  
             </div>
             <button>Create Account</button>
         </form>
