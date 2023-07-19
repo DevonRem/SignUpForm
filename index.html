@@ -26,24 +26,36 @@
 
         <form action="example.com/path" method="post">
             <div class="card">
-                <div>Let's do this!</div>
-                <label for="first_name">First Name</label>
-                <input type="text" id="first_name" placeholder="John" name="first_name">
-                <label for="last_name">Last Name</label>
-                <input type="text" id="last_name" placeholder="Smith" name="last_name">
-                <label for="user_email">Email Address</label>
-                <input type="email" id="user_email" name="email" placeholder="email@example.com">
-                <label for="phone_number">Phone Number</label>
-                <input type="tel" id="phone_number" name="phone_number" placeholder="xxx-xxx-xxxx">
-                <label for="user_password">Password</label>
-                <input type="password" id="user_password" name="password">
-                <label for="confirm_password">Confirm Password</label>
-                <input type="password" id="confirm_password" name="confirm_password">
+                <h3>Let's do this!</h3>
+                <div class="inputwrapper">
+                    <label for="first_name">First Name</label>
+                    <input type="text" id="first_name" placeholder="John" name="first_name" required>
+                </div>
+                <div class="inputwrapper">
+                    <label for="last_name">Last Name</label>
+                    <input type="text" id="last_name" placeholder="Smith" name="last_name" required>
+                </div>
+                <div class="inputwrapper">
+                    <label for="user_email">Email Address</label>
+                    <input type="email" id="user_email" name="email" placeholder="email@example.com" required>
+                </div>
+                <div class="inputwrapper">
+                    <label for="phone_number">Phone Number</label>
+                    <input type="tel" id="phone_number" name="phone_number" placeholder="xxx-xxx-xxxx" required>
+                </div>
+                <div class="inputwrapper">
+                    <label for="user_password">Password</label>
+                    <input type="password" id="user_password" name="password" required>
+                </div>    
+                <div class="inputwrapper">
+                    <label for="confirm_password">Confirm Password</label>
+                    <input type="password" id="confirm_password" name="confirm_password" required>
+                </div>
             </div>
             <button>Create Account</button>
         </form>
 
-        <div class="textend">Already have an account? Log in</div>
+        <div class="textend">Already have an account? <a href="url">Log in</a></div>
 
     </div>
     </div>
